@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <LINK REL=StyleSheet HREF="css\Style.css" TYPE="text/css" MEDIA=screen>
+    <title>Oye</title>
+</head>
+
+<body>
+    <!--INICIO Navegador -->
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand logo1 text-primary" href="index.html"><img class="logo" src="./imagenes/logo.png" alt="LOGO" />OYE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--INICIO Y CANCIONES LINK CENTRADAS COLOR OSCURO-->
+            <ul class="navbar-nav mx-auto justify-content-center  ">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="index.html ">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Canciones.html ">Canciones</a>
+                </li>
+            </ul>
+            <!--FIN Y CANCIONES LINK CENTRADAS COLOR OSCURO-->
+            <ul class="navbar-nav ">
+                <li class="nav-item mr-1 my-1">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ventana">Contacto</button>
+                </li>
+                <li class="nav-item mr-1 my-1 d-md-none d-lg-block ">
+                    <a class="btn btn-primary " href="Login.html ">Inicio de sesion</a>
+                </li>
+                <li class="nav-item mr-1 my-1 d-md-none d-lg-block ">
+                    <a class="btn btn-primary " href="Registro.html ">Registro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--FIN Navegador -->
+    <!-- INICIO MODAL-->
+    <div class="modal" tabindex="-1" role="dialog" id="ventana">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span>
+                     </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>info@oye.com</p>
+                    <p style="color:blue" ;>+1 123 123123123</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIN MODAL-->
+    <!--INICIO CUERPO-->
+    <main>
+        <div class="container-fluid bg-white">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card d-flex justify-content-center mx-auto card-centrada bg-light">
+                        <div class="card-body text-center ">
+                            <div class="row ">
+                                <div class=" col-md-5">
+                                    <h4 class="card-title text-left font-weight-bold">Canciones gratis para la comunidad!</h4>
+                                    <p class="card-text text-left">Con este sitio podrás escuchar audios de manera libre...</p>
+                                    <a href="Canciones.html" class="btn btn-primary float-left mb-1">Ver canciones</a>
+                                </div>
+                                <div class="col-md-7">
+                                    <div id="carouselExampleSlidesOnly " class="carousel slide " data-ride="carousel" data-interval="1000">
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active ">
+                                                <img class="card-img-top " src="./imagenes/portada.jpeg " alt="First slide ">
+                                            </div>
+                                            <div class="carousel-item ">
+                                                <img class="card-img-top Image-rotate-gray" src=" ./imagenes/portada.jpeg " alt="Second slide ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOP -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-8">
+                    <div class="text-center">
+                        <hr/>
+                        <h3 class="font-weight-bold">Top 3</h3>
+                        <hr/>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 d-none d-md-block ">Nombre</div>
+                        <div class="d-col-block col-sm-block col-md-6">Canciones</div>
+                    </div>
+                    <hr/>
+                    <div id="top3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--FIN CUERPO-->
+    <!-- INICIO PIE DE PAGINA-->
+    <footer class="container-fluid py-1 bg-primary ">
+        <div class="row text-white">
+            <div class=" d-none d-md-block col-md-6 col-lg-6 col-xl-6 text-left">
+                Comparte la musica
+            </div>
+            <div class=" col-sm-12 col-md-6 col-lg-6 text-center text-md-right">
+                Derechos Reservados
+            </div>
+        </div>
+    </footer>
+    <!-- FIN PIE DE PAGINA-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/top3.js"></script>
+</body>
+
+</html>
